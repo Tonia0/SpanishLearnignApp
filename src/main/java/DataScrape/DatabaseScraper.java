@@ -22,7 +22,7 @@ public class DatabaseScraper {
               * For testing the database
               */
              PreparedStatement ps = connect.prepareStatement(sql)) {
-            System.out.println("Connected to DB!");
+            System.out.println("Connected to DB!"); // hellod
             for (Article a : articles) {
                 ps.setString(1, a.getTitle());
                 ps.setString(2, a.getContent());
