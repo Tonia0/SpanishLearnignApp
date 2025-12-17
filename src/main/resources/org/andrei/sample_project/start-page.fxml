@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="DataScrape.ScraperController"
+            prefHeight="1080.0" prefWidth="1920.0"
+            style="-fx-background-color: #FFA07A;">
+
+   <children>
+      <Label layoutX="242.0" layoutY="86.0" text="¡Bienvenido!" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="44.0" />
+         </font>
+         <effect>
+            <Blend opacity="0.2" />
+         </effect>
+      </Label>
+      <MenuBar minHeight="-Infinity" prefHeight="50.0" prefWidth="1974.0" style="-fx-background-color: #FF6347;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Log On/Off">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Contact Us">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Contribute to our project">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="titleField" layoutX="139.0" layoutY="206.0" prefHeight="131.0" prefWidth="535.0" />
+      <TextArea fx:id="contentField" layoutX="142.0" layoutY="358.0" prefHeight="200.0" prefWidth="535.0" />
+   </children>
+</AnchorPane>
